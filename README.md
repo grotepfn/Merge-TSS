@@ -16,8 +16,7 @@ Test the program with
 go test
 ```
 ## Complexity
-This code runs in O(n log n). This is due to the sort function. An out-of-place-sort-function would fasten it up to O(n) as 
-the step after, the actual merging, only takes O(n). This sorting function would need O(n) - where n is the difference between the biggest and smallest number - space however.
+This code runs in O(n log n). This is due to the sort function. The actual merging step only need O(n) time. An out-of-place-sort-function could therefore speed this up.
 
 ## Robustness 
 This code accepts all valid inputs and exits otherwise.
