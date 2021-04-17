@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"flag"
 	"log"
-	"os"
 	"sort"
 	"strconv"
 )
@@ -38,7 +37,6 @@ func main() {
 		}
 		if len(parsedInput) != 2 || parsedInput[1] < parsedInput[0] {
 			log.Fatalf("pass array with length of two with first lower bound and second upper bound")
-			os.Exit(3)
 		} else {
 			parsedInput := [2]int{parsedInput[0], parsedInput[1]}
 
