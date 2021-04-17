@@ -48,8 +48,8 @@ func main() {
 	Merge(input)
 }
 
-//Merges sets with integer array with length 2 if they overleap
-//first input is the lower bound second input is the upper bound
+//Merges integer arrays with a length of 2 if their ranges overleap
+//first input is the lower bound, second input the upper bound
 func Merge(list [][2]int) [][2]int {
 
 	sort.SliceStable(list, func(i, j int) bool {
